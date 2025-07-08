@@ -1,0 +1,461 @@
+* {
+    box-sizing: border-box;
+}
+
+header {
+    background-image: url(gifs.gif);
+    background-color: black;
+    text-align: center;
+    padding: 25px;
+    color: white;
+    border-width: 5px;
+    border-style: groove;
+    border-color: black;
+}
+
+body {
+    background-image: url(back.jpg);
+}
+
+.navbar {
+    background-color: black;
+    height: 50px;
+    border-left-width: 5px;
+    border-left-style: groove;
+    border-color: black;
+    border-bottom-style: groove;
+    border-bottom-width: 5px;
+    border-right-style: groove;
+    border-right-width: 5px;
+}
+
+aside {
+    width: 20%;
+    float: left;
+    padding: 10px;
+    background-color: red;
+    border-left-width: 5px;
+    border-left-style: groove;
+    border-color: black;
+    border-bottom-style: groove;
+    border-bottom-width: 5px;
+    margin-bottom: 10px;
+    border-right-style: solid;
+    border-right-width: 2px;
+}
+
+section {
+    width: 40%;
+    float: left;
+    padding: 10px;
+    background-color: red;
+    border-left-width: 2px;
+    border-left-style: solid;
+    border-color: black;
+    border-right-width: 2px;
+    border-right-style: solid;
+    border-bottom-style: groove;
+    border-bottom-width: 5px;
+    margin-bottom: 10px;
+}
+
+article {
+    width: 40%;
+    float: left;
+    padding: 10px;
+    background-color: red;
+    border-right-width: 5px;
+    border-right-style: groove;
+    border-color: black;
+    border-bottom-style: groove;
+    border-bottom-width: 5px;
+    margin-bottom: 10px;
+    border-left-style: solid;
+    border-left-width: 2px;
+}
+
+footer {
+    clear: both;
+    display: block;
+    background-image: url(gifs.gif);
+    text-align: center;
+    padding: 25px;
+    border-width: 5px;
+    border-style: groove;
+    border-color: black;
+    color: white;
+}
+
+@media screen and (max-width:600px) {
+
+    aside,
+    section,
+    article {
+        width: 100%;
+    }
+}
+
+p::selection {
+    color: red;
+    background-color: black;
+}
+
+.navbar ul {
+    list-style-type: none;
+    padding: 0px;
+    margin: 0px;
+    overflow: hidden;
+}
+
+.navbar a {
+    color: red;
+    text-decoration: none;
+    padding: 15px;
+    display: block;
+    text-align: center;
+}
+
+.navbar a:hover {
+    background-color: grey;
+}
+
+.navbar li {
+    float: left;
+}
+
+p {
+    font-size: 18px;
+}
+
+a {
+    color: whitesmoke;
+}
+
+h1::selection {
+    color: red;
+    background-color: black;
+}
+
+h2::selection {
+    color: red;
+    background-color: black;
+}
+
+a::selection {
+    color: black;
+    background-color: red;
+}
+
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 50px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.form-group {
+    margin-bottom: 30px;
+}
+
+.containers {
+    margin: 20px;
+    padding: 20px;
+}
+
+.subforum {
+    margin-top: 20px;
+}
+
+.subforum-row {
+    display: grid;
+    grid-template-columns: 7% 60% 13% 20%;
+}
+
+.subforum-column {
+    padding: 10px;
+    margin: 4px;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.subforum-icon {
+    font-size: 25px;
+}
+
+/*smartphones*/
+@media screen and (max-width: 460px) {
+    .container {
+        margin: 10px;
+        padding: 10px;
+    }
+
+    .subforum-row {
+        display: grid;
+        grid-template-columns: 25% 75%;
+        grid-template-rows: 65% 35%;
+    }
+
+    .subforum-stats {
+        font-size: 12px;
+    }
+}
+
+/*tablet*/
+
+@media screen and (min-width: 460px) and (max-width: 1021px) {
+    .container {
+        margin: 15px;
+        padding: 15px;
+    }
+
+    .subforum-row {
+        display: grid;
+        grid-template-columns: 10% 60% 10% 20%;
+    }
+
+    .subforum-icon i {
+        font-size: 15px;
+    }
+
+    html {
+        font-size: 16px;
+    }
+}
+
+.subforum-description * {
+    margin-block: 0;
+}
+
+.subforum-devider {
+    display: block;
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(190, 190, 190, 0), rgba(255, 255, 255, 0.75), rgba(190, 190, 190, 0));
+}
+
+/*search*/
+.search-box {
+    border: groove 1px black;
+    margin-top: 20px;
+    padding: 40px;
+    display: flex;
+    justify-content: center;
+    box-shadow: 1px 2px 3px black;
+}
+
+.search-box select {
+    padding: 10px;
+}
+
+.search-box input {
+    padding: 10px;
+}
+
+.search-box button {
+    padding: 10px;
+    background-color: red;
+    color: black;
+    border-radius: 2px;
+}
+
+.search-box button:hover {
+    background-color: black;
+    color: red;
+    box-shadow: 1px 2px 3px black;
+}
+
+/*search box for phone */
+@media screen and (max-width: 460px) {
+
+    .search-box input,
+    .search-box button,
+    .search-box select {
+        min-width: 300px;
+        margin-top: 5px;
+    }
+}
+
+/* Forum info */
+.forum-info {
+    padding: 20px;
+    background-color: grey;
+    border-style: groove;
+    border-width: 3px;
+    border-color: black;
+    border-radius: 2px;
+}
+
+.chart {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.table-head {
+    display: flex;
+}
+
+.table-head div {
+    padding: 5px;
+    margin: 2px;
+    background-color: gray;
+    font-weight: bold;
+}
+
+.table-head .status {
+    flex: 5%;
+}
+
+.table-head .subjects {
+    flex: 70%;
+}
+
+.table-head .replies {
+    flex: 10%;
+}
+
+.table-head .last-reply {
+    flex: 15%;
+}
+
+/* table body*/
+.table-row {
+    display: flex;
+}
+
+.table-row .status,
+.table-row .subjects,
+.table-row .replies,
+.table-row .last-reply {
+    padding: 5px;
+    margin: 2px;
+}
+
+.table-row .status {
+    flex: 5%;
+    font-size: 30px;
+    text-align: center;
+}
+
+.table-row .subjects {
+    flex: 70%;
+}
+
+.table-row .replies {
+    flex: 10%;
+}
+
+.table-row .last-reply {
+    flex: 15%;
+}
+
+/*Pagination*/
+.pagination {
+    padding: 20px;
+    font-size: 17px;
+}
+
+.pagination a {
+    margin-inline: 5px;
+    padding: 5px 10px;
+    border: solid 0.5px #fff;
+}
+
+.pagination a:hover {
+    opacity: 0.5;
+}
+
+/*Navigation*/
+.navigate {
+    margin-block: 20px;
+    font-weight: lighter;
+    font-size: 24px;
+}
+
+.navigate a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.navigate a:hover {
+    color: black;
+    font-weight: bolder;
+}
+
+/*note*/
+.note {
+    padding: 20px;
+    display: block;
+}
+
+.note span {
+    font-size: 19px;
+    margin-block: 5px;
+}
+
+/*details*/
+.head {
+    display: flex;
+    padding: 5px;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.authors {
+    flex: 20%;
+}
+
+.content {
+    flex: 80%;
+}
+
+.body {
+    display: flex;
+    padding: 10px;
+    margin-top: 5px;
+}
+
+.body .author .username {
+    font-size: 20px;
+}
+
+.body .authors .img {
+    max-width: 50px;
+    max-height: 80px;
+}
+
+.body .content .comment button {
+    border: none;
+    padding: 10px;
+    font-weight: bolder;
+    box-shadow: 4px 6px #fff;
+    cursor: pointer;
+    float: right;
+}
+
+.comment-area {
+    margin-top: 10px;
+    margin-left: 7px;
+}
+
+.comment-area textarea {
+    width: 100%;
+    min-height: 70px;
+    padding: 10px;
+    margin-block: 10px;
+}
+
+.comment-area input {
+    cursor: pointer;
+}
+
+.comment-area input:hover {
+    border: solid 2px black;
+}
+
+.comments-container {
+    margin-top: 50px;
+}

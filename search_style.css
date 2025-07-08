@@ -1,0 +1,22 @@
+body {
+    background-image: url(back.jpg);
+}
+
+section {
+    background-color: red;
+    text-align: center;
+    border-style: groove;
+    border-color: black;
+    border-width: 5px;
+    margin-top: 20px;
+    font-size: 18px;
+}
+
+section ul {
+    list-style-type: none;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
